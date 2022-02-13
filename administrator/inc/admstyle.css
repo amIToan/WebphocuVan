@@ -1,0 +1,35 @@
+font.main_subtitle { color: #004175; font-weight: bold; font-size: 10pt; font-family: tahoma, Helvetica, Geneva, Swiss, SunSans-Regular; text-decoration: underline; padding: 2px 5px 2px 2px }
+font.News_Date  { font-family: Times New Roman; font-size: 7pt; font-weight: normal; color:#999999;}
+
+.header1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: none;
+; background-color: #CCCCCC
+}
+.header2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #0000CC;
+	text-decoration: none;
+; letter-spacing: normal
+}
+.text {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: normal; font-weight: normal; color: #000000; text-decoration: none; text-align: justify}
+.pageheader {  font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: bold; color: #000000; text-decoration: none}
+.boldtext {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: normal; font-weight: bold; color: #000000; text-decoration: none}
+.tableheader1 {  font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; font-weight: bold; color: #000000; text-decoration: none; background-color: #CCCCCC}
+.tablecolor {  background-color: #D3D3E7; border: 1px #000000 solid}
+.italictext {  font-style: italic}
+.textbg {  background-color: #ECECEC; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: normal; font-weight: normal; color: #000000; text-decoration: none; text-align: justify}
+.tableheader2 {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #000000; text-decoration: none; background-color: #CCCCCC}
+.tableheader3 { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #000000; text-decoration: none; background-color: #CCCCCC }
+.graytext { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: normal; font-weight: normal; color: #666666; text-decoration: none; text-align: justify }
+.smalltext { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; line-height: normal; font-weight: normal; color: #000000; text-decoration: none; text-align: justify }
+.header3 { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #6E6E6E; text-decoration: none; ; letter-spacing: normal }
+.header4 { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000066; text-decoration: none; ; letter-spacing: normal }
+.graytextbold { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: normal; font-weight: bold; color: #666666; text-decoration: none; text-align: justify }
+.redtext { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: normal; font-weight: normal; color: #FF0000; text-decoration: none; text-align: justify }
+.footertext { font-family: Arial, Helvetica, sans-serif; font-size: 10px; line-height: normal; font-weight: normal; color: #000000; text-decoration: none; text-align: justify }

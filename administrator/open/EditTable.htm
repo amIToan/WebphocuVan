@@ -1,0 +1,345 @@
+﻿<HTML>
+<HEAD>
+<TITLE>Table Properties</TITLE>
+<script src="/administrator/skin/language.js"></script>
+<script src="/administrator/js/qblib.js"></script>
+
+<style>
+  body, .button{background: buttonface;font-family:"MS Sans Serif";font-size:9pt;margin:0px;}
+  .text {font-family:"MS Sans Serif";font-size:9pt;padding:5px 0px 5px 0px;}
+  .inputs {padding-right:15px;}
+  .controls{width:100%;text-align:right;margin-top:5px;margin-right:3px}
+</style>
+
+<script language="JScript">
+  function isInt() {
+    return ((event.keyCode >= 48) && (event.keyCode <= 57))
+  }
+
+ function isIntW() {
+   	 return ((event.keyCode==37)|| (event.keyCode >= 48) && (event.keyCode <= 57))
+  }
+
+function txtTblRows_onblur() {
+	if((txtTblRows.value=="")||(isNaN(txtTblRows.value))) {
+		txtTblRows.value=3;
+		txtTblRows.focus();
+	}
+}
+
+function txtTblWidth_onblur() {
+ if((txtTblWidth.value=="")||(isNaN(txtTblWidth.value))) {
+	txtTblWidth.value="100";
+	txtTblWidth.focus();
+ }
+}
+
+function txtTblColumns_onblur() {
+	if((txtTblColumns.value=="")||(isNaN(txtTblColumns.value))) {
+		txtTblColumns.value=2;
+		txtTblColumns.focus();
+	}
+}
+
+function txtTblBorderSize_onblur() {
+	if((txtTblBorderSize.value=="")||(isNaN(txtTblBorderSize.value))) {
+		txtTblBorderSize.value=1;
+		txtTblBorderSize.focus();
+	}
+}
+
+function txtTblCellPadding_onblur() {
+	if((txtTblCellPadding.value=="")||(isNaN(txtTblCellPadding.value))) {
+		txtTblCellPadding.value=0
+		txtTblCellPadding.focus();
+	}
+}
+
+function txtTblCellSpacing_onblur() {
+	if((txtTblCellSpacing.value=="") ||(isNaN(txtTblCellSpacing.value))) {
+		txtTblCellSpacing.value=0;
+		txtTblCellSpacing.focus();
+	}
+}
+</script>
+
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+function butTblBorderColor_onclick() {
+	var BrClr;
+	BrClr=window.showModalDialog("selcolorIE.html", "", "dialogWidth:22em; dialogHeight:23em" );
+	//window.alert("Selected Color: "+BrClr);
+	if (BrClr != null) {
+   		txtTblBorderColor.value=BrClr;
+   		window.txtTblBorderColor.style.backgroundColor=""+BrClr; }
+	return;
+}
+
+function butCellBgColor_onclick() {
+	var BgClr;
+	BgClr=window.showModalDialog("selcolorIE.html", "", "dialogWidth:22em; dialogHeight:23em" );
+	if (BgClr != null)  {
+   		txtCellBgColor.value=BgClr;
+  		window.txtCellBgColor.style.backgroundColor=""+BgClr;  }
+	return;
+}
+
+function butCancel_onclick() {
+	window.close();
+}
+function InsertTable(TableStr)
+{
+  var el=document.frames[fID];
+  el.focus();
+  var sel = el.document.selection;
+  var Range = sel.createRange();
+  //if(!Range.duplicate) return;
+  
+  if(sel.type=="Control") 
+  {
+  	Range.item(0).outerHTML = TableStr; 
+  }
+  else
+  {
+  	Range.pasteHTML(TableStr);
+  }
+}//End function insert image
+-->
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE=JavaScript FOR=Ok EVENT=onclick>
+<!--
+	var vArr=new Array();
+	//Initially Rows X Columns are only 25 X 25
+	
+	if((Math.abs(txtTblRows.value)<=0)||(Math.abs(txtTblColumns.value)<=0)) {
+		window.alert("Cột và Dòng phải là số nguyên nằm giữa 1 và 25");
+		txtTblRows.focus();
+		return;
+	}
+
+	if(Math.abs(txtTblWidth.value)<=0) {
+		window.alert("Table Width an integer between 1 and 100");
+		txtTblWidth.focus();
+		return;
+	}
+
+	if((Math.abs(txtTblRows.value)>25) && (Math.abs(txtTblColumns.value)>25)) {
+		window.alert("For Rows and Columns an integer between 1 and 25");
+		txtTblRows.focus();
+		return;
+	}
+	
+   	//vArr["vTRows"]=Math.abs(txtTblRows.value);
+	//vArr["vTCols"]=Math.abs(txtTblColumns.value);
+	//vArr["vTWidth"]=Math.abs(txtTblWidth.value);
+	//vArr["vTAlign"]=selTblAlign.value;
+	//vArr["vTBrSize"]=Math.abs(txtTblBorderSize.value);
+	//vArr["vTBrClr"]=txtTblBorderColor.value;
+	//vArr["vCellSp"]=Math.abs(txtTblCellSpacing.value);
+	//vArr["vCellPd"]=Math.abs(txtTblCellPadding.value);
+	//vArr["vCellBgClr"]=txtCellBgColor.value;
+    //vArr["vCellVerAlign"]=selCellVertAlign.value;
+    //window.returnValue = vArr;
+    tStr="<table";
+    tStr+=" width=" + Math.abs(txtTblWidth.value);
+    tStr+=" align=" + selTblAlign.value;
+    tStr+=" border=" + Math.abs(txtTblBorderSize.value);
+    tStr+=" bordercolor=" + txtTblBorderColor.value;
+    tStr+=" cellpadding=" + Math.abs(txtTblCellPadding.value);
+    tStr+=" cellspacing=" + Math.abs(txtTblCellSpacing.value);
+    tStr+=">";
+    for (i=1;i<=Math.abs(txtTblRows.value);i++)
+    {
+    	tStr+="<tr>";
+    	for (j=1;j<=Math.abs(txtTblColumns.value);j++)
+    	{
+    		tStr+="<td";
+    		tStr+=" vAlign=" + selCellVertAlign.value;
+    		tStr+=" bgColor=" + txtCellBgColor.value;
+    		tStr+=">&nbsp;";
+    		tStr+="</td>";
+    	}
+    	tStr+="</tr>";
+    }
+    
+    tStr+="</table>";
+    
+     if(document.all){ window.returnValue= tStr; self.close(); return }
+
+  	var el= window.opener.document.getElementById(window.opener.fID).contentWindow;
+  	
+  	window.opener.insertHTML(el,tStr)
+
+	var tdA= el.document.getElementsByTagName('td')
+	for(var i=0; i<tdA.length;i++)
+	tdA[i].addEventListener("click", window.opener.clickTD, true) 
+
+  	self.close();
+  -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+function initTableProp()
+{
+ //addEventToForm();
+
+ if(window.opener.TABLE) TABLE= window.opener.TABLE
+ else
+  {
+   var cell=window.opener.curTD ;
+   if(!cell){ alert(TABSELECT); self.close();return}
+   TABLE= cell.parentNode.parentNode.parentNode
+  }
+ 
+ var fobj= document.FO
+ 
+ with(TABLE) 
+ {
+  if(style.backgroundColor) fobj.CO_bgcolor.value= style.backgroundColor;  
+  OLDBGCOL= style.backgroundColor
+  var bgimg= style.backgroundImage
+  fobj.txtCellBgColor.value= bgimg.substring(4,bgimg.length-1)
+
+  if(typeof(style.height)!='undefined') fobj.PI_height.value= style.height
+  if(typeof(style.width)!='undefined') fobj.PI_width.value= style.width
+  if(typeof(cellSpacing)!='undefined') fobj.PI_cellspacing.value= cellSpacing
+  if(typeof(cellPadding)!='undefined') fobj.PI_cellpadding.value= cellPadding
+  if(typeof(border)!='undefined') fobj.PI_border.value= border
+  if(document.all)
+  {
+   fobj.CO_bordercolor.value= borderColor
+   fobj.CO_bordercolordark.value= borderColorDark
+   fobj.CO_bordercolorlight.value= borderColorLight
+  }
+  if(typeof(summary)!='undefined') fobj.summary.value= summary
+
+  var al;
+  if(typeof(align)!='undefined')
+  {
+   al = align; al= al.toUpperCase()
+   fobj.OP_align.value = al
+  }
+  
+  if(typeof(frame)!='undefined') 
+  {
+   al = frame; al= al.toUpperCase()
+   fobj.OP_borderframe.value = al
+  }
+  
+  if(typeof(rules)!='undefined') 
+  {
+   al = rules; al= al.toUpperCase()
+   fobj.OP_borderrules.value = al
+  }
+
+
+
+  if(typeof(style.border)!='undefined') 
+  {
+   var ftype= "dotted,dashed,solid,double,groove,ridge,inset,outset,double"
+   al = style.border; var arr= al.split(" ")
+   var i=-1;
+   while(arr[++i])
+    {
+	  var reg= eval( "/"+arr[i]+"/" )
+	  if(reg.test(ftype)) fobj.OP_bframetype.value = arr[i]
+	}
+  }
+
+  if(typeof(style.borderLeftColor)!='undefined') 
+  {
+   al = style.borderLeftColor; al= al.toLowerCase()
+   fobj.CO_borderLeftColor.value = al
+  }
+  if(typeof(style.borderTopColor)!='undefined') 
+  {
+   al = style.borderTopColor; al= al.toLowerCase()
+   fobj.CO_borderTopColor.value = al
+  }
+  if(typeof(style.borderRightColor)!='undefined') 
+  {
+   al = style.borderRightColor; al= al.toLowerCase()
+   fobj.CO_borderRightColor.value = al
+  }
+  if(typeof(style.borderBottomColor)!='undefined') 
+  {
+   al = style.borderBottomColor; al= al.toLowerCase()
+   fobj.CO_borderBottomColor.value = al
+  }
+ }
+}
+-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY onFocus="initTableProp()" >
+<FIELDSET ALIGN=center ID=FS0>
+	<TABLE>
+		<tr>
+			<td class="text">Rows:</td>
+			<td class="inputs"><input name="txtTblRows" type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();" onblur="return txtTblRows_onblur()" value="2"></td>
+			<td class="text">Columns:</td>
+			<td class="inputs"><input name="txtTblColumns" type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();"  onblur="return txtTblColumns_onblur()" value="1"></td>
+		</tr>
+	</TABLE>
+</FIELDSET>
+
+<DIV> &nbsp; </DIV>
+
+<FIELDSET ALIGN=center ID=FS1><LEGEND>Table attributes</LEGEND>
+	<TABLE>
+		<TR>
+          <td class="text">Width(%):</td>
+          <td class="inputs"><INPUT name=txtTblWidth type="text" size="3" maxlength="3" onkeypress="event.returnValue=isInt();" onblur="return txtTblWidth_onblur()" value="100"></td>
+          <td class="text">Alignment:</td>
+          <td class="inputs"><SELECT id=selTblAlign name=selTblAlign>
+								<OPTION selected value="left">left
+								<OPTION value="right">right
+								<OPTION value="center">center</OPTION>
+							 </SELECT> </TD>
+		</TR>
+
+        <TR>
+			<td class="text">Border size:</td>
+			<td class="inputs"><INPUT name=txtTblBorderSize type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();"  onblur="return txtTblBorderSize_onblur()" value="1"></td>
+            <td class="text">Border color:</td>
+			<td class="inputs"><INPUT name=txtTblBorderColor type="text" size="11" maxlength="11" DISABLED value="#000000"><INPUT name=butTblBorderColor style="HEIGHT: 24px; WIDTH: 26px" type=button value=... LANGUAGE=javascript onclick="return butTblBorderColor_onclick()"> </td>
+        </TR>
+
+        <TR>
+			<td class="text">Cell spacing:</td>
+			<td class="inputs"><INPUT name=txtTblCellSpacing type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();" onblur="return txtTblCellSpacing_onblur()" value="0"></td>
+			<td class="text">Cell padding:</td>
+			<td class="inputs"><INPUT name=txtTblCellPadding type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();" onblur="return txtTblCellPadding_onblur()" value="0"></td>
+		</TR>
+	</TABLE>
+</FIELDSET>
+
+<DIV>&nbsp;</DIV>
+
+<FIELDSET ALIGN=center ID=FS2><LEGEND>Cell Attributes</LEGEND>
+	<TABLE>
+		<TR>
+            <td class="text">Background color:</td>
+			<td class="inputs"><INPUT name=txtCellBgColor type="text" size="11" maxlength="11" DISABLED value="#FFFFFF"><INPUT id=butCellBgColor name=butCellBgColor style="HEIGHT: 24px; WIDTH: 26px" type=button value=... LANGUAGE=javascript onclick="return butCellBgColor_onclick()"></TD>
+            <td class="text">Vertical alignment:</td>
+			<td class="inputs"><SELECT id=selCellVertAlign name=selCellVertAlign>
+								<OPTION selected value="Top">Top
+								<OPTION value="Middle">Middle
+								<OPTION value="Bottom">Bottom  </OPTION>
+								</SELECT></TD>
+		</TR>
+	  </TABLE>
+</FIELDSET>
+<DIV>&nbsp;</DIV>
+<div class="controls">
+<input id="Ok" class="button" type="button" value="     OK     ">
+<input class="button" type="button" value="  Cancel  " onclick="window.close();" id=button1 name=button1>
+</div>
+<DIV>&nbsp;</DIV>
+</BODY>
+</HTML>

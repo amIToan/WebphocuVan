@@ -1,0 +1,169 @@
+*, body > * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+  }
+input, select, input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+}
+label {
+  font-weight: unset;
+}
+form[name="fInsert"] {
+    min-height: 100vh;
+    padding: 2rem 3rem;
+}
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: center;
+    column-gap: max(5rem, 10px);
+  }
+  .hor-covered-input{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: max(1rem, 5px);
+  }
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+    display: block;
+    /* width: 90%; */
+  }
+  .form-control-1 {
+    padding: 8px ;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+  }
+  .form-label {
+    font-weight: 700;
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+    text-align: left;
+    display: block;
+    flex-basis: 10%;
+    margin: 0;
+  }
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  .checkbox-div {
+      flex-basis: 50%;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      column-gap: max(1rem, 5px);
+  }
+  input[type="checkbox"] {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+  }
+  .checkbox-text {
+    font-size: 1.4rem;
+    text-align: left;
+    display: block;
+  }
+  .ver-covered-input {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .sub-hor-covered-input{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: max(1rem, 5px);
+  }
+  .form-group-2 {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    column-gap: max(5rem, 10px);
+  }
+  .four-divided {
+      width: 40%;
+  }
+  .form-group-3 {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+  .sub-vertical {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .centered-item {
+      display: flex;
+      justify-content: center;
+      column-gap: max(2rem, 5px);
+  }
+  .form-submit {
+    outline: none;
+    background-color: #007bff;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+#CatId_DependRole {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+    display: block;
+}
+@media (max-width: 600px) {
+  .form-group, .form-group-2, .form-group-3 {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: unset;
+    row-gap: max(1rem, 10px);
+  }
+  .sub-hor-covered-input{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: max(1rem, 5px);
+    flex-wrap: wrap;
+    align-items: unset;
+  }
+}

@@ -1,0 +1,438 @@
+﻿
+
+@media (min-width: 43.75em) {
+    .wrap {
+        padding: 2em;
+    }
+}
+
+.modal_p {
+    display: block;
+    padding: 0 1em;
+    text-align: center;
+    width: 100%;
+    background: #3598db;
+}
+
+@media (min-width: 43.75em) {
+    .modal_p {
+        padding: 1em 2em;
+        text-align: right;
+    }
+}
+
+.modal_p > label {
+    background: #000;
+    border-radius: .2em;
+    color: #FFDE16;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0.5em 1em;
+    padding: 0.75em 1.5em;
+    transition: all 0.55s;
+}
+
+    .modal_p > label:hover {
+        transform: scale(0.97);
+    }
+
+.sv_input {
+    position: absolute;
+    right: 100px;
+    top: 30px;
+    z-index: -10;
+}
+
+.modal_p__overlay {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: -800;
+}
+
+.modal_p__box {
+    padding: 1em .75em;
+    position: relative;
+    margin: 1em auto;
+    max-width: 500px;
+    width: 90%;
+}
+
+@media (min-height: 37.5em) {
+    .modal_p__box {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -80%);
+    }
+}
+
+@media (min-width: 50em) {
+    .modal_p__box {
+        padding: 1.75em;
+    }
+}
+
+.modal_p__box label {
+    background: #FFDE16;
+    border-radius: 50%;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1.5em;
+    position: absolute;
+    right: .5em;
+    top: .5em;
+    width: 1.5em;
+}
+
+.modal_p__box h2 {
+    color: #FFDE16;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.modal_p__box p {
+    color: #FFDE16;
+    text-align: left;
+}
+
+.modal_p__overlay {
+    opacity: 0;
+    overflow: hidden;
+    transform: scale(0.5);
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+input:checked ~ .modal_p__overlay {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 800;
+}
+
+input:focus + label {
+    transform: scale(0.97);
+}
+
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+/***************************************************************/
+/*************** Footer Bar Style ******************************/
+/***************************************************************/
+.footer-bar {
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #111;
+    border-top: 1px solid #E62600;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+    .footer-bar .article-wrapper {
+        font-family: arial, sans-serif;
+        font-size: 14px;
+        color: #888;
+        float: left;
+        margin-left: 10%;
+    }
+
+    .footer-bar .article-link a, .footer-bar .article-link a:visited {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.site-link a, .site-link a:visited {
+    color: #888;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    float: right;
+    margin-right: 10%;
+    text-decoration: none;
+}
+
+    .site-link a:hover {
+        color: #E62600;
+    }
+
+
+
+.sv-1 {
+    background: url('/images/sv1.png') no-repeat center;
+}
+
+.sv-2 {
+    background: url('/images/sv2.png') no-repeat center;
+}
+
+.sv-3 {
+    background: url('/images/sv3.png') no-repeat center;
+}
+
+.sv-4 {
+    background: url('/images/sv4.png') no-repeat center;
+}
+
+.sv-5 {
+    background: url('/images/sv5.png') no-repeat center;
+}
+
+.sv-6 {
+    background: url('/images/sv6.png') no-repeat center;
+}
+
+.sv-item1 {
+    height: 75px;
+    padding-top: 3%;
+    margin: 5px auto;
+    color: #FFF;
+    font-size: 14px;
+    font-family: 'Roboto-Light', Arial,sans-serif !important;
+}
+
+    .sv-item1:hover {
+        border: solid 1px #FFDE16;
+    }
+
+
+
+.backg_sv1 {
+    width: 100%;
+    /*background: #2dcc70;*/
+    background: #FFF;
+}
+
+.backg_sv2 {
+    width: 100%;
+    /*background: #a2abb0;*/
+    background: #FFF;
+}
+
+.backg_sv3 {
+    width: 100%;
+    /*background: #9a59b5;*/
+    background: #FFF;
+}
+
+.backg_sv4 {
+    width: 100%;
+    /*background: #f5791f;*/
+    background: #FFF;
+}
+
+.backg_sv5 {
+    width: 100%;
+    background: #3598db;
+    background: #FFF;
+}
+
+.backg_sv6 {
+    width: 100%;
+    /*background: #ef3026;*/
+    background: #FFF;
+}
+
+.sv-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+.sv-btton {
+    width: 100%;
+    padding: 10px;
+    background: #E62600;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+    .sv-btton:hover {
+        background: #E62600;
+    }
+
+
+.sv-h3 {
+    color: #111;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.sv-txt-desc {
+    color: #111;
+    font-size: 14px !important;
+    font-family: 'Roboto-Light', Arial,sans-serif !important;
+    font-weight: normal;
+    margin-top: 0px !important;
+    text-align: justify;
+}
+
+
+.mrg-t10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #FFF;
+}
+
+
+.sv-hover:hover {
+    border: solid 1px #FFF;
+}
+
+.sv-hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.sv-img-size {
+    width: 90px;
+}
+
+.sv-title-text {
+    color: #4800ff;
+    font-size: 16px !important;
+    font-family: 'Roboto-Light', Arial,sans-serif !important;
+    font-weight: normal;
+    text-align: justify;
+}
+
+
+
+.lbl-error {
+    color: #E62600;
+    font-family: 'Roboto-Light', Arial,sans-serif !important;
+    font-size: 13px !important;
+    margin-bottom: 0px !important;
+}
+
+
+.lbl-text-sv {
+    color: #888;
+    font-size: 16px !important;
+    font-family: 'Roboto-Light', Arial,sans-serif !important;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 0px !important;
+}
+
+.bd-errors {
+    border-color: #a94442 !important;
+}
+
+
+.msg-text
+{
+    color:#a94442;
+    font: lighter 14px/1.5 'Roboto-Light', Arial,sans-serif;
+    font-weight: normal;
+}
+
+.msg-title-text
+{
+    color:#888;
+    font: lighter 24px/1.5 'Roboto-Light', Arial,sans-serif;
+    font-weight: normal;
+}
+
+
+
+
+
+#main {
+    margin: 0px auto auto;
+}
+
+form {
+    margin-bottom: 0px;
+}
+
+.input {
+    display: none;
+}
+
+
+
+
+
+
+.label {
+    background-color: #232323;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2B2B2B;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: calibri;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    position: relative;
+    text-shadow: 0pt 1px 0pt rgba(0, 0, 0, 0.6);
+    -moz-transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+    .label:before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 13px;
+        width: 0;
+        height: 0;
+        border: 4px solid transparent;
+        border-top: 5px solid white;
+    }
+
+.content {
+    background-color: #FFFFFF;
+    height: 0pt;
+    opacity: 0;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+    .content p {
+        color: #888888;
+        /*font: lighter 18px/1.5 "Arial", sans-serif;*/
+        font-size: 14px !important;
+        font-family: 'Roboto-Light', Arial,sans-serif !important;
+        line-height: 18px;
+        padding: 10px;
+    }
+
+.label:hover {
+    background-color: #0088BB;
+    border-color: transparent;
+}
+
+.input:checked ~ .content {
+    height: auto;
+    opacity: 1;
+}
+
+.input:checked ~ label {
+    background-color: #0088BB;
+    border-color: transparent;
+}
+
+    .input:checked ~ label:before {
+        border-bottom: 5px solid white;
+        border-top: none;
+    }

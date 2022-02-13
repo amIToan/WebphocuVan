@@ -1,0 +1,275 @@
+﻿
+br
+{
+    height:25px;
+}
+
+hr
+{
+    border: 0px;
+    border-bottom:solid #CCCCCC 1px; 
+    margin:3px;
+    padding:3px;
+    height:30px;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	font-family:Arial;
+    line-height:200%;
+    letter-spacing:2px;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+.title-10px
+{
+     font-size: 10px;
+     margin:0px;
+     padding:0px;
+}
+
+h4 {
+    font-size: 10px;
+}
+
+h5 {
+    font-size: 14px;
+    color:#003D81;
+}
+h6
+{
+    font-size:14px;
+    color:#F38100;
+}
+
+
+header, nav, section {
+    display: block;
+}
+
+.font-color-yellow
+{
+    font-size:18px;
+    color:#D48127;
+    font-family:Arial;
+}
+
+.font-color-green
+{
+    font-size:18px;
+    color:green;
+    font-family:Arial;
+}
+
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+.box-home
+ { 
+    height: 100%; 
+    width: 700px; 
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+
+}
+
+.border-avarta
+{
+    height: 128px; 
+    width: 128px; 
+    border: 1px solid #FF8100; 
+    border-radius: 64px 64px 64px 64px; 
+    -moz-border-radius: 64px 64px 64px 64px;
+    -webkit-border-radius: 64px 64px 64px 64px;
+    box-shadow: #CCCCCC 0px 0px 2px 2px;
+    background-clip:border-box;
+    background-color:#c7d1d6;
+    }
+
+.ButtonCircle
+{
+    border-radius: 64px 64px 64px 64px; 
+    -moz-border-radius: 64px 64px 64px 64px;
+    -webkit-border-radius: 64px 64px 64px 64px;
+    box-shadow: #CCCCCC 0px 0px 2px 2px;
+    background-clip:border-box;
+    }
+
+.box-home1
+{
+    background-image:url('../../Images/Background/boxhome1.png'); 
+    width:350px; 
+    height:230px;   
+}
+.TabBanner
+{
+     background-image: url('../../Images/Icon/TapHomeSmall.png'); 
+     background-repeat: no-repeat; 
+     background-position: left center; 
+     width: 350px;
+     height:57px;
+     vertical-align:middle;
+     margin:0px;
+     padding:0px;
+     
+}
+
+.TabBannerDown
+{
+    background-image: url('../../Images/Icon/TapHomeDown.png'); 
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    width: 350px;
+    height:65px;
+    vertical-align:middle;
+    margin:0px;
+    padding:0px;
+}
+
+/*menu top banner*/
+
+/* login
+----------------------------------------------------------*/
+.login 
+{
+    display: block;
+    font-size: 12px;
+    margin: 0 0 10px;
+    text-align: right;
+}
+
+ .login a 
+ {
+        background-color: #d3dce0;
+        color:#fff;
+        margin-left: 10px;
+        margin-right: 3px;
+        padding: 2px 3px;
+        text-decoration: none;
+    }
+
+
+
+textarea {
+    min-height: 75px;
+}
+
+.bg-font-yellow
+{
+     background-color:#D48127;
+     color:#fff;
+     font-family:Arial;
+     font-size:16px;
+     width:auto;
+     margin:0;
+     padding:0;
+}
+
+.bordertext
+{
+     border:#c7d1d6 solid 1px;
+     height:20px;
+     vertical-align:middle;
+}
+
+.border-box-img
+{
+    border:solid 2px #c7d1d6;
+    border-bottom:solid 10px #c7d1d6;
+    margin:2px;
+    padding:2px 2px 2px 2px;
+
+}
+
+
+.box-border-no-fix
+ { 
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    padding:0px;
+}
+.box-logo-top
+{
+    position:absolute; 
+	z-index: 1; 
+    margin:0px 0px 30px 30px;
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px;
+    padding:0px;
+    background-color:#ffffff;
+    stop-opacity:initial;
+}
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.gradient-bg-blue-yellow
+{ 
+    background: linear-gradient(to right top, #F5C590 0%, #004979 100%); 
+    background: -moz-linear-gradient(to right top, #F5C590 0%, #004979 100%); 
+    background: -o-linear-gradient(to right top, #F5C590 0%, #004979 100%); 
+    background: -ms-linear-gradient(to right top, #F5C590 0%, #004979 100%); 
+    background: -webkit-linear-gradient(bottom left, #F5C590 0%, #004979 100%);
+}
+.gradient-bg-blue
+{
+    background: radial-gradient(circle farthest-corner at center top, #42A4F5 0%, #004979 100%); 
+    background: -moz-radial-gradient(circle farthest-corner at center top, #42A4F5 0%, #004979 100%); 
+    background: -o-radial-gradient(circle farthest-corner at center top, #42A4F5 0%, #004979 100%); 
+    background: -ms-radial-gradient(circle farthest-corner at center top, #42A4F5 0%, #004979 100%); 
+    background: -webkit-radial-gradient(center top, circle farthest-corner, #42A4F5 0%, #004979 100%);
+}
+
+.gradient-bg-gawn
+{
+    background: radial-gradient(circle farthest-corner at center top, #e9eaed 0%, #f1f1f1 100%); 
+    background: -moz-radial-gradient(circle farthest-corner at center top, #e9eaed 0%, #f1f1f1 100%); 
+    background: -o-radial-gradient(circle farthest-corner at center top, #e9eaed 0%, #f1f1f1 100%); 
+    background: -ms-radial-gradient(circle farthest-corner at center top, #e9eaed 0%, #f1f1f1 100%); 
+    background: -webkit-radial-gradient(center top, circle farthest-corner, #e9eaed 0%, #f1f1f1 100%);
+}
+
+.gradient-bg-yellow
+{
+    background: radial-gradient(circle farthest-corner at center top, #FA9C3C 0%, #FABF82 100%); 
+    background: -moz-radial-gradient(circle farthest-corner at center top, #FA9C3C 0%, #FABF82 100%); 
+    background: -o-radial-gradient(circle farthest-corner at center top, #FA9C3C 0%, #FABF82 100%); 
+    background: -ms-radial-gradient(circle farthest-corner at center top, #FA9C3C 0%, #FABF82 100%); 
+    background: -webkit-radial-gradient(center top, circle farthest-corner, #FA9C3C 0%, #FABF82 100%);
+}

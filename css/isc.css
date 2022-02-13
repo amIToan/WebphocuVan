@@ -1,0 +1,228 @@
+.companyname {
+	font: bold normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.topmenu {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 5px;
+
+}
+.date {
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+}
+.menu {
+	font: bold bold 10px/normal Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	background: #99CCFF;
+	padding: 5px;
+	margin-bottom: 3px;
+}
+.everydayinfor {
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+}
+.latestnews {
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 0px 10px;
+
+
+}
+.update {
+	font: 10px Arial;
+}
+.topnews {
+	font: bold 15px Arial, Helvetica, sans-serif;
+}
+.description {
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+.descriptionitem {
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	padding: 3px 0px 0px 3px;
+}
+.dot {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	background: EBEED6;
+	list-style: square;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+.dot1 {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 2px;
+}
+.itemheader {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #990000;
+}
+.itemheader1 {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background: #FFFFFF;
+	padding: 3px;
+	border: 0px outset;
+}
+.itemcontent {
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	margin: 5px;
+	padding: 5px 0px;
+}
+.capitem {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 0px 15px;
+}
+.itemtitle1 {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	padding: 0px 5px;
+}
+.itemtitle2 {
+	font: normal 11px/normal Verdana, Arial, Helvetica, sans-serif;
+	background: EBEED6;
+	padding: 1px 3px 1px 0px;
+}
+.itemtitle1 {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	padding: 0px 5px;
+	background: #F6F6F6;
+
+}
+.itemtitle3 {
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	padding: 3px 2px 3px 0px;
+}
+.itemtitle4 {
+	font: bold bold 12px Arial, Helvetica, sans-serif;
+	padding: 0px;
+
+}
+.photonote {
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 0px 3px;
+}
+.foradbanner {
+	font: bold bold 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 10px 26px;
+}
+.videopage {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #CC0000;
+}
+.videotitle {
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	padding: 2px 3px;
+	background: #ECECEC;
+}
+.auvimedia {
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background: #666666;
+}
+.avdate {
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	padding: 0px;
+}
+.avitems {
+	font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 0px 5px;
+}
+.avtitle {
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	padding: 3px 5px;
+}
+.camera {
+	padding: 3px 0px 3px 3px;
+}
+.speaker {
+	padding: 2px 0px 2px 2px;
+}
+.vdccopyright {
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	padding: 0px 5px 5px;
+}
+.latestnewsfly {
+
+	font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 0px 10px;
+}
+.menulight {
+
+	font: bold bold 10px/normal Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	background: #3C81DF;
+	padding: 5px;
+	margin-bottom: 3px;
+}
+.childrenmenu {
+	font: bold bold 10px/normal Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	padding: 5px;
+	margin-bottom: 3px;
+	background: #E8F0FC;
+
+}
+.itemheaderbig {
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif;
+	color: #000099;
+	padding: 0px 0px 7px;
+
+}
+.descriptionitem1 {
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	padding: 3px;
+	background: #F6F6F6;
+	border: thin dotted;
+
+
+}
+.newstitle {
+
+	font: bold 18px Arial, Helvetica, sans-serif;
+	padding: 0px 0px 7px;
+}
+.trichdanbai {
+	font: bold bold 12px Arial, Helvetica, sans-serif;
+	padding: 5px;
+	background: #F1F5BA;
+
+}
+.newstitlesendemail {
+	font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 5px 5px 0px;
+
+}
+.submenulight {
+
+
+	font: bold bold 10px/normal Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+	background: #FFFFFF;
+	padding: 5px;
+	margin-bottom: 3px;
+}
+.itemtitleskien {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	padding: 7px 5px 7px 7px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	padding: 0px 5px;
+	list-style: square;
+
+}
+.entertainment {
+
+
+	font: normal 12px Arial, Helvetica, sans-serif;
+	padding: 5px 10px;
+}

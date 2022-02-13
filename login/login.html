@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>test</title>
+    
+
+    <link href="Titillium.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="Login.css" rel="stylesheet" />
+
+    <script>
+        window.console = window.console || function (t) { };
+        window.open = function () { console.log("window.open is disabled."); };
+    </script>
+</head>
+<body>
+    <div class="form" >
+
+        <ul class="tab-group">
+            <li class="tab active"><a href="#signup">Đăng ký</a></li>
+            <li class="tab"><a href="#login">Đăng nhập</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="signup">
+                <h1>Đăng ký miễn phí</h1>
+
+                <form onsubmit="test();" method="post">
+
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label>
+                                Tên<span class="req">*</span>
+                            </label>
+                            <input type="text" required autocomplete="off" />
+                        </div>
+
+                        <div class="field-wrap">
+                            <label>
+                                Họ<span class="req">*</span>
+                            </label>
+                            <input type="text" required autocomplete="off" />
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Email<span class="req">*</span>
+                        </label>
+                        <input type="email" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Mật khẩu<span class="req">*</span>
+                        </label>
+                        <input type="password" required autocomplete="off" />
+                    </div>
+
+                    <button type="submit" class="button button-block">Đăng ký ngay</button>
+
+                </form>
+
+            </div>
+
+            <div id="login">
+                <h1>Chào Mừng Bạn!</h1>
+
+                <form onsubmit="test();" method="post">
+
+                    <div class="field-wrap">
+                        <label>
+                            Email<span class="req">*</span>
+                        </label>
+                        <input type="email" required autocomplete="off" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label>
+                            Mật khẩu<span class="req">*</span>
+                        </label>
+                        <input type="password" required autocomplete="off" />
+                    </div>
+
+                    <p class="forgot"><a href="#">Quên mật khẩu?</a></p>
+
+                    <button class="button button-block" >Đăng nhập</button>
+
+                </form>
+
+            </div>
+
+        </div><!-- tab-content -->
+
+    </div> <!-- /form -->
+</body>
+</html>
+
+
+<script src="stopExecutionOnTimeout.js"></script>
+
+<script src="Login.js"></script>
+
+
+
+<script>
+    if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+    }
+    function test() {
+        alert('adasdas');
+        return false;
+    }
+    
+</script>

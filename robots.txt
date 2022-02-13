@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /include/
+Disallow: /administrator/
+Allow: /images/
+Allow: /images_upload
+User-agent: Mediapartners-Google*
+Sitemap: http://Neulink.vn/sitemap.xml

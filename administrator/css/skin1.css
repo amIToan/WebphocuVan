@@ -1,0 +1,243 @@
+﻿
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Cate-left*/
+.ul {
+    padding-left: 10px;
+}
+
+    .ul li {
+        list-style: none;
+    }
+
+.wp-cate {
+    list-style: none;
+    color: rgb(56, 139, 96);
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.wp-cate-Item {
+    padding-left: 10px;
+    list-style: none;
+    color: rgb(214, 125, 10);
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: solid 1px rgba(186, 207, 218, 0.4);
+    font-family: Arial, sans-serif;
+}
+
+    .wp-cate-Item a {
+        font-family: Arial, sans-serif;
+        color: #CFBD8A;
+    }
+
+
+.Tb tr td {
+    font-family: Arial;
+    font-size: 11pt;
+    color: #161616;
+    line-height: 180%;
+    letter-spacing: 1px;
+    padding: 2px;
+    margin: auto;
+    text-align: justify;
+    padding: 8px 5px;
+}
+
+.tb-item {
+    font-family: Arial;
+    font-size: 11pt;
+    color: #161616;
+    line-height: 180%;
+    letter-spacing: 1px;
+    padding: 2px;
+    margin: auto;
+    text-align: justify;
+    padding: 8px 0px;
+}
+
+    .tb-item tr td {
+        font-family: Arial;
+        font-size: 11pt;
+        color: #161616;
+        line-height: 180%;
+        letter-spacing: 1px;
+        padding: 2px;
+        margin: auto;
+        text-align: left;
+        padding: 8px 0px;
+    }
+
+
+.scl-cate select {
+    width: 352px;
+    padding: 8px;
+    border: solid 1px rgb(56, 139, 96);
+}
+
+
+.td-lbl {
+    border-bottom: solid 1px #388B60;
+}
+
+.inp-kh {
+    width: 180px;
+    border: solid 1px rgb(56, 139, 96);
+    padding: 8px;
+    font-family: Arial;
+    font-size: 11pt;
+    color: #161616;
+    letter-spacing: 1px;
+}
+
+.bnt-submit {
+    width: 180px;
+    border: solid 1px rgb(56, 139, 96);
+    padding: 12px 8px;
+    color: #FFF;
+    background: rgb(56, 139, 96);
+    float: right;
+}
+
+
+
+.txt-display {
+    font-family: inherit;
+    width: 100%;
+    height: 50px;
+    /*background: #f5ecbe;*/
+    border: solid 1px rgb(56, 139, 96);
+    font-size: 14px;
+    padding: 10px 5px;
+}
+
+
+.Tb-in {
+    background: #FDF8B6;
+    padding: 10px 50px;
+    font-family: Arial;
+    font-size: 11pt;
+    color: #161616;
+    line-height: 180%;
+    letter-spacing: 1px;
+}
+
+.Tb-input tr td {
+    background: #FDF8B6;
+    border: solid 1px #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    .Tb-input tr td input[type="text"]  {
+        font-family: inherit;
+        width: 100%;
+        /*background: #f5ecbe;*/
+        border: solid 1px rgb(56, 139, 96);
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    .Tb-input tr td textarea {
+        font-family: inherit;
+        width: 100%;
+        /*background: #f5ecbe;*/
+        border: solid 1px rgb(56, 139, 96);
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+.btn-submit {
+    width: 120px !important;
+    padding: 5px 15px;
+    background: rgb(8, 83, 28);
+    border: solid 1px rgb(214, 125, 10);
+    float: right;
+    color: #FFF;
+}
+
+
+.in-input {
+    width: 190px !important;
+}
+
+    .in-input input {
+        width: 100% !important;
+    }
+
+    .in-input select {
+        width: 100% !important;
+        font-family: inherit;
+        background: #f5ecbe;
+        border: solid 1px rgb(56, 139, 96);
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+.tb-it select {
+    width: 100% !important;
+    font-family: inherit;
+    background: #f5ecbe;
+    border: solid 1px rgb(56, 139, 96);
+    font-size: 14px;
+    padding: 10px 5px;
+}
+
+
+
+
+
+.Tb-input2 {
+    background: #FDF8B6;
+    padding: 10px 50px;
+    font-family: Arial;
+    font-size: 11pt;
+    color: #161616;
+    line-height: 180%;
+    letter-spacing: 1px;
+}
+
+
+    .Tb-input2 tr td input {
+        font-family: inherit;
+        width: 70%;
+        background: #f5ecbe;
+        border: solid 1px rgb(56, 139, 96);
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+
+
+.tb-it {
+    width: 100%;
+}
+
+    .tb-it tr td {
+        border: none !important;
+    }
+
+
+
+
+.inp-kh2 {
+    width: 62%;
+    border: solid 1px rgb(56, 139, 96);
+    padding: 8px;
+    font-family: Arial;
+    font-size: 11pt;
+    color: #161616;
+    letter-spacing: 1px;
+}
